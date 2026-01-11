@@ -1,6 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import styles from '.Header.module.css'
+import styles from './Header.module.css'
+import Main from '../Main/Main'
+import Contacts from '../Contacts/Contacts'
+import Cart from '../../data/products'
 
 function Header() {
   return (

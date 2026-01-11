@@ -1,33 +1,24 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import { useState } from 'react'
 import News from '../News/News'
 import ProductCard from '../ProductCard/ProductCart'
 import styles from './Main.module.css'
+import products from '../../data/products.js'
 
 function Main() {
-  const [product, setProduct] = useState([])
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get('U R L')
-        setProduct(responce.data)
-      } catch (error) {
-        console.error('Ошибка при получении данных', error)
-      }
-    }
-    fetchProducts()
-  }, [])
+  const [items] = useState(products)
 
   return (
     <main className={styles.main}>
       <News />
       <h1>Товары</h1>
-      <div className={styles.products}>
-        {products.map((product) => (
+
+      <div className={styles.carts}>
+        {items.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </main>
   )
 }
+
 export default Main

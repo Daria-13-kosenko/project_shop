@@ -7,17 +7,21 @@ import instagram from '../../assets/icons/instagram.svg'
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <div>
+      <div className={styles.contacts}>
         <p>Контакты</p>
-        <div>
+        <div className={styles.number}>
           8 800 000 00 00
+          <br />
           <br />
           emailexample@email.com
         </div>
-        <div> 2024 Сникер магазин. Все права защищены</div>
+        <div className={styles.rights}>
+          {' '}
+          2024 Сникер магазин. Все права защищены
+        </div>
       </div>
       <div className={styles.footerRight}>
-        <div>
+        <div className={styles.socialMedia}>
           <a href="link.domain">
             <img src={facebookLogo} alt="facebook"></img>
           </a>
@@ -28,7 +32,10 @@ function Footer() {
             <img src={instagram} alt="instagram"></img>
           </a>
         </div>
-        <input placeholder="Введите свой email:"></input>
+        <input
+          className={styles.input}
+          placeholder="Введите свой email:"
+        ></input>
       </div>
     </footer>
   )

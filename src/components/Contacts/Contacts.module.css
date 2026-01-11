@@ -1,0 +1,76 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.contacts {
+  margin: 50px 250px;
+}
+.contacts h1 {
+  margin-top: 72px;
+  font-size: 36px;
+  color: #000000;
+  font-weight: 700;
+  padding-bottom: 37px;
+  border-bottom: 1px solid #ddd;
+}
+.numbers {
+  color: #82828280;
+  margin-bottom: 67px;
+  margin-left: 20px;
+  margin-top: 116px;
+}
+.inputs {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.input {
+  width: 364px;
+  height: 66px;
+  border: none;
+  background-color: #fafafa;
+  padding-left: 20px;
+}
+.input ::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+.textarea {
+  width: 767px;
+  height: 116px;
+  background-color: #fafafa;
+  border: none;
+  padding-left: 20px;
+  padding-top: 28px;
+  resize: none;
+}
+.textarea::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+.information {
+  display: flex;
+  gap: 79px;
+}
+.findUs {
+  background-color: #fafafa;
+  width: 458px;
+  height: 221px;
+  justify-content: center;
+}
+.findUs img {
+  margin-left: 50px;
+  margin: 0px 65 65;
+}
+.findUs p {
+  color: #5d5c5cb2;
+  margin: 18px 158px;
+  margin-bottom: 32px;
+}
+.button {
+  background-color: #090d1a;
+  color: #fafafa;
+  width: 131px;
+  height: 53px;
+  border-radius: 10px;
+  margin: 31px 636px;
+}

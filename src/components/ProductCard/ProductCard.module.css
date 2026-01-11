@@ -1,0 +1,32 @@
+.card {
+  display: grid;
+  justify-content: center;
+  width: 386px;
+  height: 393px;
+  border: 1px solid gray;
+  border-radius: 15%;
+}
+.sneakers {
+  width: 293px;
+  margin-bottom: -32px;
+  margin-top: -50px;
+}
+.nameSnek {
+  width: 293px;
+  margin-bottom: 42px;
+}
+.prices {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: -40px;
+}
